@@ -36,8 +36,10 @@ public class Test {
             // 获得模板
             Template temp = cfg.getTemplate("aa.ftl");
 
-            // 填充模板
+            // 设置输出位置
             Writer out = new OutputStreamWriter(System.out);
+
+            // 内容输出
             temp.process(root, out);
 
 
